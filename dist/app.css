@@ -1,4 +1,28 @@
-h1 {
-  color: red;
+header {
+  width: 100%;
+  height: 600px;
+  background-color: purple;
+}
+
+header .header-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  background-color: yellow;
+}
+
+header .header-menu .logo {
+  width: 30%;
+  height: 100px;
+  background-color: green;
+}
+
+.nav-list {
+  width: 60%;
+  height: 100px;
+  background-color: orange;
 }
 

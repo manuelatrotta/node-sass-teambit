@@ -10,16 +10,32 @@ header {
     height: 100px;
     margin: auto;
     background-color: yellow;
+    border-bottom: 1px solid grey;
     .logo {
       width: 30%;
       height: 100px;
-      background-color: green;
+      padding-left: 40px;
+      padding-top: 35px;
+      a{
+        text-decoration: none;
+      }
     }
   }
 }
 
 .nav-list{
+  display: flex;
+  justify-content: flex-end;
   width: 60%;
+  line-height: 60px;
   height: 100px;
   background-color: orange;
+  li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 40px;
+    button{
+      
+    }
+  }
 }

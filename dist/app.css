@@ -12,17 +12,32 @@ header .header-menu {
   height: 100px;
   margin: auto;
   background-color: yellow;
+  border-bottom: 1px solid grey;
 }
 
 header .header-menu .logo {
   width: 30%;
   height: 100px;
-  background-color: green;
+  padding-left: 40px;
+  padding-top: 35px;
+}
+
+header .header-menu .logo a {
+  text-decoration: none;
 }
 
 .nav-list {
+  display: flex;
+  justify-content: flex-end;
   width: 60%;
+  line-height: 60px;
   height: 100px;
   background-color: orange;
+}
+
+.nav-list li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 40px;
 }
 

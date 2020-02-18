@@ -1,5 +1,4 @@
 header {
-  width: 100%;
   height: 600px;
 }
 
@@ -7,10 +6,10 @@ header .header-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 90%;
-  height: 100px;
+  width: 85%;
+  height: 85px;
   margin: auto;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #58402B;
 }
 
 header .header-menu .logo {
@@ -36,11 +35,16 @@ header .header-menu .logo a {
   display: inline-block;
   list-style: none;
   padding-right: 40px;
+  text-transform: capitalize;
 }
 
 .nav-list li a {
   text-decoration: none;
   color: #58402B;
+}
+
+.nav-list li a:hover {
+  color: #263971;
 }
 
 button {

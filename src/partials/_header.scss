@@ -1,15 +1,14 @@
 //header
 header {
-  width: 100%;
   height: 600px;
   .header-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
-    height: 100px;
+    width: $widthPage;
+    height: $headerHeight;
     margin: auto;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid $primaryColor;
     .logo {
       width: 30%;
       height: 100px;
@@ -32,9 +31,13 @@ header {
     display: inline-block;
     list-style: none;
     padding-right: 40px;
+    text-transform: capitalize;
     a{
       text-decoration: none;
       color: $primaryColor;
+    }
+    a:hover {
+        color: $secondColor;
     }
   }
 }

@@ -55,3 +55,15 @@ button {
   border: 1px solid blue;
 }
 
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  border-radius: 3px;
+}
+
+.dropdown li {
+  text-transform: capitalize;
+  margin-bottom: -20px;
+}
+

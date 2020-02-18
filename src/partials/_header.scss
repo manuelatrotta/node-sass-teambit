@@ -114,11 +114,11 @@ button {
 
 .jumbo-title {
   h1 {
-    font-size: 50px;
+    font-size: ($fontSizeBase * 2.5);
     line-height: 80px;
   }
   h3 {
-    font-size: 30px;
+    font-size: ($fontSizeBase * 1.2);
   }
   li {
     display: inline-block;

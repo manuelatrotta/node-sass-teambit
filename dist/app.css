@@ -24,11 +24,15 @@ header .header-menu .logo a {
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   width: 60%;
   line-height: 60px;
   height: 100px;
+}
+
+.nav-list #burger-menu {
+  display: block;
 }
 
 .nav-list li {
@@ -84,11 +88,11 @@ button {
 }
 
 @media screen and (min-width: 767px) {
-  i.fa-bars {
+  #burger-menu {
     display: none;
   }
 
-  .list-header {
+  .nav-list {
     display: flex;
   }
 }

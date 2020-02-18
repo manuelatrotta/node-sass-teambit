@@ -22,11 +22,14 @@ header {
 }
 //nav-list
 .nav-list{
-  display: flex;
+  display: none;
   justify-content: flex-end;
   width: 60%;
   line-height: 60px;
   height: 100px;
+  #burger-menu {
+    display: block;
+  }
   li{
     display: inline-block;
     list-style: none;
@@ -74,10 +77,10 @@ button {
 
 //mediaquery for menu
 @media screen and (min-width: $breackpointSmall) {
-  i.fa-bars {
+  #burger-menu {
     display: none;
   }
-  .list-header {
+  .nav-list{
     display: flex;
   }
 }

@@ -71,3 +71,13 @@ button {
     }
   }
 }
+
+//mediaquery for menu
+@media screen and (min-width: $breackpointSmall) {
+  i.fa-bars {
+    display: none;
+  }
+  .list-header {
+    display: flex;
+  }
+}

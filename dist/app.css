@@ -41,3 +41,15 @@ header .header-menu .logo a {
   padding-right: 40px;
 }
 
+.nav-list li a {
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+

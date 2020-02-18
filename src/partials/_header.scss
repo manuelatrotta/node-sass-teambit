@@ -34,8 +34,12 @@ header {
     display: inline-block;
     list-style: none;
     padding-right: 40px;
-    button{
-      
+    a{
+      text-decoration: none;
     }
   }
+}
+
+button {
+  @include btn;
 }

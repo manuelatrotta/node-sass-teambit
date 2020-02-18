@@ -47,14 +47,19 @@ button {
 }
 
 //dropdown
-
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  width: 30px;
-  border-radius: 3px;
-  li {
-  text-transform: capitalize;
-  margin-bottom: -20px;
+.open-dropdown{
+  position: relative;
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -20px;
+    width: 50px;
+    box-shadow: 5px 5px $thirdColor;
+    border-radius: 3px;
+    li {
+    text-transform: capitalize;
+    margin-bottom: -20px;
+    }
   }
 }

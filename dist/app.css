@@ -55,14 +55,21 @@ button {
   border: 1px solid blue;
 }
 
-.dropdown {
+.open-dropdown {
+  position: relative;
+}
+
+.open-dropdown .dropdown {
   display: flex;
   flex-direction: column;
-  width: 30px;
+  position: absolute;
+  left: -20px;
+  width: 50px;
+  box-shadow: 5px 5px #ccc;
   border-radius: 3px;
 }
 
-.dropdown li {
+.open-dropdown .dropdown li {
   text-transform: capitalize;
   margin-bottom: -20px;
 }

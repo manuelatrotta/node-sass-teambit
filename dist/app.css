@@ -62,7 +62,7 @@ header .header-menu .logo a {
   color: #263971;
 }
 
-button {
+.button {
   display: inline-block;
   padding: 5px;
   border-radius: 5px;
@@ -70,13 +70,12 @@ button {
   border: 1px solid blue;
 }
 
-button:hover {
+.button:hover {
   background-color: #263971;
 }
 
-button:hover a {
+.button:hover a {
   color: #fff;
-  z-index: 2;
 }
 
 .open-dropdown {
@@ -124,28 +123,46 @@ button:hover a {
   margin: auto;
   margin-top: 90px;
   height: 400px;
-  background-color: red;
 }
 
 .jumbo-title,
 .jumbo-img {
   width: 50%;
   height: 400px;
-  background-color: yellow;
   color: #58402B;
+  font-weight: normal;
 }
 
 .jumbo-title h1 {
-  font-size: 45px;
+  font-size: 49.5px;
   line-height: 80px;
+  margin-bottom: 30px;
+  font-weight: normal;
 }
 
 .jumbo-title h3 {
-  font-size: 21.6px;
+  font-size: 22.5px;
+  margin-bottom: 30px;
+  font-weight: normal;
 }
 
-.jumbo-title li {
-  display: inline-block;
+.jumbo-title span {
+  margin: 0 20px;
+  color: #e2e3e5;
+}
+
+.jumbo-title p {
+  margin-top: 20px;
+}
+
+.jumbo-title a {
   text-decoration: none;
+  color: #58402B;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.jumbo-img img {
+  width: 100%;
 }
 

@@ -46,13 +46,12 @@ header {
   }
 }
 //btn in nav-list
-button {
+.button {
   @include btn;
   &:hover {
     background-color: $secondColor;
     a{
     color: $whiteColor;
-    z-index: 2;
     }
   }
 }
@@ -102,26 +101,44 @@ button {
   margin: auto;
   margin-top: 90px;
   height: $jumboHeight;
-  background-color: red;
   &-title,
   &-img {
   width: $halfwidth;
   height: $jumboHeight;
-  background-color: yellow;
-    color: $primaryColor;
+  color: $primaryColor;
+  font-weight: normal;
   }
 }
 
 .jumbo-title {
   h1 {
-    font-size: ($fontSizeBase * 2.5);
+    font-size: ($fontSizeBase * 3.3);
     line-height: 80px;
+    margin-bottom: 30px;
+    font-weight: normal;
   }
   h3 {
-    font-size: ($fontSizeBase * 1.2);
+    font-size: ($fontSizeBase * 1.5);
+    margin-bottom: 30px;
+    font-weight: normal;
   }
-  li {
-    display: inline-block;
+  span {
+    margin: 0 20px;
+    color: $fourthColor;
+  }
+  p {
+    margin-top: 20px;
+  }
+   a{
     text-decoration: none;
+    color: $primaryColor;
+    font-size: $fontSizeBase;
+    font-weight: normal;
   }
+}
+
+//jumbo-img
+
+.jumbo-img img {
+  width: $totalWidth;
 }

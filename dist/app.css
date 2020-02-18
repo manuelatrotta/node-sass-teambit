@@ -24,7 +24,7 @@ header .header-menu .logo a {
 }
 
 .nav-list {
-  display: none;
+  display: flex;
   justify-content: flex-end;
   width: 60%;
   line-height: 60px;
@@ -32,7 +32,7 @@ header .header-menu .logo a {
 }
 
 .nav-list #burger-menu {
-  display: block;
+  display: none;
 }
 
 .nav-list li {
@@ -45,6 +45,7 @@ header .header-menu .logo a {
 .nav-list li a {
   text-decoration: none;
   color: #58402B;
+  font-weight: bold;
 }
 
 .nav-list li a:hover {
@@ -57,6 +58,15 @@ button {
   border-radius: 5px;
   background-color: #fff;
   border: 1px solid blue;
+}
+
+button:hover {
+  background-color: #263971;
+}
+
+button:hover a {
+  color: #fff;
+  z-index: 2;
 }
 
 .open-dropdown {
@@ -87,13 +97,13 @@ button {
   margin-right: 20px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   #burger-menu {
-    display: none;
+    display: flex;
   }
 
   .nav-list {
-    display: flex;
+    display: none;
   }
 }
 

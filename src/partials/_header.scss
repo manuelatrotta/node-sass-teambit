@@ -22,13 +22,13 @@ header {
 }
 //nav-list
 .nav-list{
-  display: none;
+  display: flex;
   justify-content: flex-end;
   width: 60%;
   line-height: 60px;
   height: 100px;
   #burger-menu {
-    display: block;
+    display: none;
   }
   li{
     display: inline-block;
@@ -38,6 +38,7 @@ header {
     a{
       text-decoration: none;
       color: $primaryColor;
+      font-weight: bold;
     }
     a:hover {
         color: $secondColor;
@@ -47,6 +48,13 @@ header {
 //btn in nav-list
 button {
   @include btn;
+  &:hover {
+    background-color: $secondColor;
+    a{
+    color: $whiteColor;
+    z-index: 2;
+    }
+  }
 }
 
 //dropdown
@@ -76,11 +84,11 @@ button {
 }
 
 //mediaquery for menu
-@media screen and (min-width: $breackpointSmall) {
+@media screen and (max-width: $breackpointSmall) {
   #burger-menu {
-    display: none;
+    display: flex;
   }
   .nav-list{
-    display: flex;
+    display: none;
   }
 }

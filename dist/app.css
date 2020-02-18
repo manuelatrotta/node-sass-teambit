@@ -99,11 +99,43 @@ button:hover a {
 
 @media screen and (max-width: 767px) {
   #burger-menu {
-    display: flex;
+    display: block;
   }
 
   .nav-list {
     display: none;
   }
+}
+
+.jumbo {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: auto;
+  margin-top: 90px;
+  height: 400px;
+  background-color: red;
+}
+
+.jumbo-title,
+.jumbo-img {
+  width: 50%;
+  height: 400px;
+  background-color: yellow;
+  color: #58402B;
+}
+
+.jumbo-title h1 {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.jumbo-title h3 {
+  font-size: 30px;
+}
+
+.jumbo-title li {
+  display: inline-block;
+  text-decoration: none;
 }
 

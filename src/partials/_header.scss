@@ -86,9 +86,42 @@ button {
 //mediaquery for menu
 @media screen and (max-width: $breackpointSmall) {
   #burger-menu {
-    display: flex;
+    display: block;
   }
   .nav-list{
     display: none;
+  }
+}
+
+//jumbotron
+
+.jumbo {
+  display: flex;
+  flex-direction: row;
+  width: $widthPage;
+  margin: auto;
+  margin-top: 90px;
+  height: $jumboHeight;
+  background-color: red;
+  &-title,
+  &-img {
+  width: $halfwidth;
+  height: $jumboHeight;
+  background-color: yellow;
+    color: $primaryColor;
+  }
+}
+
+.jumbo-title {
+  h1 {
+    font-size: 50px;
+    line-height: 80px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  li {
+    display: inline-block;
+    text-decoration: none;
   }
 }
